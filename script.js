@@ -1,4 +1,4 @@
-// DADOS DA FESTA — substitua os textos entre colchetes e mantenha as aspas.
+// D
 const festa = {
   nome: 'Heitor',
   idade: '4',
