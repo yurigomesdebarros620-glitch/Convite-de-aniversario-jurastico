@@ -155,14 +155,6 @@
             <a id="mapa" class="mapa" target="_blank" rel="noopener noreferrer" hidden>Ver no mapa ↗</a>
           </article>
         </div>
-        <figure class="foto-expedicao">
-          <img src="./assets/foto-expedicao.png" width="570" height="856" loading="lazy" decoding="async"
-            alt="Uma criança sorrindo, vestida de policial, ao lado de um dinossauro">
-          <figcaption>
-            <span class="rotulo">✦ Diário da expedição</span>
-            <strong>Um encontro jurássico!</strong>
-          </figcaption>
-        </figure>
         <section class="escavacao" id="escavacao" aria-labelledby="titulo-escavacao">
           <div class="escavacao-texto">
             <span class="rotulo">✦ Área de escavação</span>
@@ -223,7 +215,9 @@
           <form id="rsvp">
             <div class="campos">
               <label>Seu nome <small>(opcional)</small><input id="convidado" type="text" autocomplete="name" maxlength="80" placeholder="Como você se chama?"></label>
-              <label>Quantas pessoas vão com você? <small>(opcional, inclua você)</small><input id="pessoas" type="number" min="1" max="999" step="1" inputmode="numeric" placeholder="Ex.: 3"></label>
+              <label>Quantas pessoas vão com você? <small>(opcional, inclua você e as crianças)</small><input id="pessoas" type="number" min="1" max="999" step="1" inputmode="numeric" placeholder="Ex.: 3"></label>
+              <label>Quantas crianças vão? <small>(opcional)</small><input id="criancas" type="number" min="0" max="999" step="1" inputmode="numeric" placeholder="Ex.: 2"></label>
+              <label>Quais são as idades das crianças? <small>(opcional)</small><input id="idades-criancas" type="text" maxlength="200" placeholder="Ex.: 8 meses e 5 anos"></label>
             </div>
             <button class="botao confirmar" type="submit">
               <svg class="icone" aria-hidden="true"><use href="#chat"/></svg> Confirmar pelo WhatsApp
