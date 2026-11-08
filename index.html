@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142d24">
+  <meta name="description" content="Uma expedição jurássica para celebrar um aniversário cheio de aventuras.">
+  <title>Expedição Jurássica • Convite de aniversário</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <!-- Símbolos SVG locais para ícones, pegadas e fósseis -->
+  <svg width="0" height="0" aria-hidden="true" class="simbolos-svg">
+    <defs>
+      <symbol id="pata" viewBox="0 0 24 24"><path fill="currentColor" d="M9 2c2-1 4 0 4 3l.6 5 4.8-5c2.4-2 4.6.5 3 3l-3.7 6C16.5 19 15 23 11 23s-5-4-6.2-8L1 9c-1.3-3 1.3-5 3.4-3l4 5L8 5c0-1.5.3-2.5 1-3Z"/></symbol>
+      <symbol id="osso" viewBox="0 0 60 26"><path fill="currentColor" d="M13 7C9-2-2 1 2 10l3 3C-3 21 9 28 14 19h32c5 9 17 2 9-6l3-3c4-9-7-12-11-3Z"/></symbol>
+      <symbol id="seta" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="calendario" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 10h18m-13 5h2m4 0h2"/></g></symbol>
+      <symbol id="hora" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></g></symbol>
+      <symbol id="pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+      <symbol id="chat" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 8c0 4 4 8 8 8l1-2-3-1-1 1c-1.5-.6-2.4-1.5-3-3l1-1-1-3Z" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="capa" id="inicio">
+    <svg class="paisagem" viewBox="0 0 1400 500" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 288 115 228l98 36 166-100 152 113 143-81 151 74 129-138 162 92 143-47 141 47v277H0Z" fill="#365441"/>
+      <path d="M0 333q136-62 279 8t275 14q172-71 301-27t291 14q116-46 254-49v207H0Z" fill="#213e30"/>
+      <path d="M0 406q157-58 299-19t267 32q166-47 311-24t267 23q110-22 256-33v115H0Z" fill="#10261e"/>
+    </svg>
+    <nav class="topo wrap" aria-label="Navegação do convite">
+      <a class="marca" href="#inicio"><svg class="icone" aria-hidden="true"><use href="#pata"/></svg> DINO CONVITE</a>
+      <a class="atalho" href="#confirmacao">Confirmar presença ↗</a>
+    </nav>
+    <div class="hero wrap">
+      <div class="chamada">
+        <span class="selo rotulo">✦ Convite de aniversário</span>
+        <h1>Expedição <span>Jurássica</span></h1>
+        <div class="aniversario"><span data-festa="nome">[NOME]</span> <span class="idade"><span data-festa="idade">[IDADE]</span> anos</span></div>
+        <p>Prepare suas botas de explorador! A turma dos dinos está te esperando para uma aventura pré-histórica.</p>
+        <div class="chamada-acoes">
+          <a class="botao" href="#detalhes">Explorar a festa <svg class="icone" aria-hidden="true"><use href="#seta"/></svg></a>
+          <a class="atalho-fossil" href="#escavacao">Descobrir um fóssil <span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+
+      <div class="arte">
+        <svg viewBox="0 0 610 500" role="img" aria-labelledby="titulo-cena">
+          <title id="titulo-cena">Tiranossauro sorridente na selva, com um vulcão, um pterodáctilo, um brontossauro e um tricerátopo</title>
+          <defs>
+            <linearGradient id="por-do-sol" x2="0" y2="1" gradientUnits="objectBoundingBox">
+              <stop stop-color="#ffdb78"/><stop offset="1" stop-color="#e97c4a"/>
+            </linearGradient>
+            <clipPath id="disco"><circle cx="325" cy="230" r="194"/></clipPath>
+            <clipPath id="montagem-selva">
+              <rect class="faixa-selva" x="-120" y="-100" width="850" height="210"/>
+              <rect class="faixa-selva" x="-120" y="109" width="850" height="102"/>
+              <rect class="faixa-selva" x="-120" y="210" width="850" height="102"/>
+              <rect class="faixa-selva" x="-120" y="311" width="850" height="102"/>
+              <rect class="faixa-selva" x="-120" y="412" width="850" height="210"/>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#montagem-selva)">
+          <g class="cena-fundo">
+            <circle cx="325" cy="230" r="207" fill="none" stroke="#ecd597" stroke-opacity=".45" stroke-dasharray="2 8"/>
+            <circle cx="325" cy="230" r="194" fill="url(#por-do-sol)"/>
+            <g clip-path="url(#disco)">
+              <path d="M120 158h136m89 15h170m-397 39h106m130-92h181" stroke="#fbe4a1" stroke-width="6" stroke-linecap="round" opacity=".45"/>
+              <path d="M116 346 203 265l56 43 100-91 49 28 53-109 38 1 87 197v95H116Z" fill="#9f5e44"/>
+              <path d="m430 199 31-63 38 1 34 77-37-29-11 17-12-31-12 11-11-7Z" fill="#db7048"/>
+              <path d="M120 380q98-72 208-45t223-7v116H120Z" fill="#536947"/>
+              <path d="M144 340q17-7 25-21 18-26 53-15 8 3 12-10 6-16 6-30 0-14 13-15 10-1 12 7 0 7-13 8-2 42-12 55-4 6-12 9l1 19h-8l-5-16-19 2-4 15h-8v-17q-23 17-41 9Z" fill="#475e42"/>
+              <path d="M110 409q100-66 221-38t214-9v81H110Z" fill="#335840"/>
+            </g>
+            <g class="fumaca" fill="#f6e9cc"><circle cx="480" cy="123" r="8"/><circle cx="487" cy="113" r="12"/><circle cx="496" cy="102" r="14"/></g>
+            <g class="voador" fill="#633e2d">
+              <path d="M189 134q26-19 49-6 18-17 45-10-19 7-23 22-13-6-23 3-11-7-23 0-9-9-25-9Z"/>
+              <path d="m230 133 6-16 6 11 10 4-12 5Z"/>
+            </g>
+          </g>
+          <path d="M24 447q26-40 126-39 96-34 188-17 126-35 230 35l26 24q-81 34-290 31Q123 485 24 447Z" fill="#0e251c"/>
+          <ellipse cx="311" cy="428" rx="232" ry="25" fill="#233f2d"/>
+          <g fill="#708954" class="pegadas">
+            <use href="#pata" x="107" y="431" width="20" height="20" transform="rotate(-38 117 441)"/>
+            <use href="#pata" x="147" y="443" width="15" height="15" transform="rotate(-35 154 450)"/>
+            <use href="#pata" x="182" y="433" width="12" height="12" transform="rotate(-34 188 439)"/>
+          </g>
+          <!-- T-Rex desenhado em camadas, com cabeça articulada -->
+          <g stroke="#233d2a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M284 360q35-13 51 14l-6 33q19-2 24 9 2 10-18 10h-37q-14-3-11-17l6-22Z" fill="#597c3c"/>
+            <path d="M278 303q-83 43-132 10-14-12-11 6 19 52 119 52 28 42 92 24 59-14 61-69l-17-87-61 5Z" fill="#8ca950"/>
+            <path d="M384 285q-6 65-57 103 51 4 71-36l8-49Z" fill="#ddc573" stroke="none"/>
+            <path d="M262 352q22-19 48-4 16 10 3 33l-15 29q18 2 23 14 2 11-17 12h-45q-14-2-12-16l11-46" fill="#a1b657"/>
+            <path d="M355 307q14 22 33 17l17-11m-1 1 11 3m-11-3 7-8" fill="none" stroke="#344a2c" stroke-width="8"/>
+            <g class="cabeca">
+              <path d="M310 266q-20-17-18-47 1-43 44-57 37-11 70 22l43 4q31 3 31 33 0 21-21 27l-23 3q7 10-5 20-20 18-69 15-38-1-52-20Z" fill="#a7bb58"/>
+              <path d="M352 271q34 11 77-4l8-16q-48 11-75-4" fill="#dfca79" stroke="none"/>
+              <path d="M365 241q26 26 77 9" fill="none"/>
+              <path d="m408 256 5 11 7-12" fill="#fff4d7" stroke-width="2"/>
+              <ellipse cx="365" cy="212" rx="17" ry="21" fill="#fff3cf" stroke-width="3"/>
+              <ellipse cx="371" cy="213" rx="7" ry="11" fill="#233d2a" stroke="none"/>
+              <circle cx="373" cy="209" r="2.5" fill="white" stroke="none"/>
+              <ellipse cx="455" cy="213" rx="5.5" ry="3.8" fill="#344a2c" stroke="none"/>
+              <ellipse cx="347" cy="242" rx="11" ry="6" fill="#e98d65" stroke="none"/>
+              <path d="M327 194l9-5m-15 18 5-3" stroke="#779244" stroke-width="6"/>
+            </g>
+            <path d="m230 337 11 1m-35 4 10 3m73-32 11-5" stroke="#678742" stroke-width="6"/>
+          </g>
+          <!-- Tricerátopo pequeno em primeiro plano -->
+          <g stroke="#302c25" stroke-width="3.5" stroke-linejoin="round">
+            <path d="M467 409q38-30 67 0l25 1-21 10-5 14h-11l-3-9h-25l-4 10h-13l-1-16Z" fill="#d49155"/>
+            <path d="M491 414q14-15 1-33-8-15-19-11-8-7-15 4-13-1-13 11-12 5-8 17 5 21 28 21Z" fill="#ecaa67"/>
+            <path d="M461 402q-13-8-22 1l-9 9q0 11 15 12h22q13-3 12-13-2-9-18-9Z" fill="#f0bb77"/>
+            <path d="m460 401-1-15 12 13m-27 8-9-10 1 14" fill="#fff0ca"/>
+            <circle cx="451" cy="409" r="2.5" fill="#302c25" stroke="none"/>
+          </g>
+          <g class="folha" stroke-linejoin="round">
+            <path d="M92 439q-31-11-49-56 29 4 43 32-13-47-4-70 23 20 20 62 13-34 39-42-6 40-44 72Z" fill="#789050"/>
+            <path d="M529 448q19-45 55-51-11 33-41 49 26-13 49 1-25 20-63 1Z" fill="#5c7949"/>
+          </g>
+          <g fill="#ffda85"><path d="m108 189 4 9 9 4-9 4-4 9-4-9-9-4 9-4Z"/><path d="m529 280 3 6 6 3-6 2-3 6-2-6-6-2 6-3Z"/><circle cx="87" cy="248" r="3"/><circle cx="540" cy="97" r="3"/></g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <svg class="solo" viewBox="0 0 1440 32" preserveAspectRatio="none" aria-hidden="true"><path fill="#f6e9cc" d="M0 18 72 21 164 13 255 17 322 10 410 17 494 12 568 21 659 15 723 18 813 9 886 15 950 12 1036 21 1111 14 1180 19 1265 10 1348 16 1440 12V32H0Z"/></svg>
+  </header>
+
+  <main>
+    <section class="festa textura" id="detalhes" aria-labelledby="titulo-detalhes">
+      <div class="wrap">
+        <div class="secao-titulo revelar">
+          <span class="rotulo">01 · Diário da expedição</span>
+          <h2 id="titulo-detalhes">O mapa da aventura</h2>
+          <p>Anote as pistas para encontrar a turma dos dinos.</p>
+        </div>
+        <div class="grade revelar">
+          <article class="cartao">
+            <div class="emblema"><svg class="icone" aria-hidden="true"><use href="#calendario"/></svg></div>
+            <div><h3>Data</h3><p data-festa="data">[DIA/MÊS/ANO]</p></div>
+          </article>
+          <article class="cartao">
+            <div class="emblema"><svg class="icone" aria-hidden="true"><use href="#hora"/></svg></div>
+            <div><h3>Horário</h3><p data-festa="horario">[HORÁRIO]</p></div>
+          </article>
+          <article class="cartao cartao-local">
+            <div class="emblema"><svg class="icone" aria-hidden="true"><use href="#pin"/></svg></div>
+            <h3>Local</h3>
+            <p data-festa="local">[NOME DO LOCAL + ENDEREÇO COMPLETO]</p>
+            <a id="mapa" class="mapa" target="_blank" rel="noopener noreferrer" hidden>Ver no mapa ↗</a>
+          </article>
+        </div>
+        <figure class="foto-expedicao">
+          <img src="./assets/foto-expedicao.png" width="570" height="856" loading="lazy" decoding="async"
+            alt="Uma criança sorrindo, vestida de policial, ao lado de um dinossauro">
+          <figcaption>
+            <span class="rotulo">✦ Diário da expedição</span>
+            <strong>Um encontro jurássico!</strong>
+          </figcaption>
+        </figure>
+        <section class="escavacao" id="escavacao" aria-labelledby="titulo-escavacao">
+          <div class="escavacao-texto">
+            <span class="rotulo">✦ Área de escavação</span>
+            <h3 id="titulo-escavacao">Quem passou por aqui?</h3>
+            <p id="dica-escavacao">Uma pegada de dinossauro ficou marcada na rocha.</p>
+            <button class="escavacao-botao" id="espalhar-poeira" type="button" hidden>
+              Espalhar a poeira <span aria-hidden="true">✦</span>
+            </button>
+          </div>
+          <div class="escavacao-palco" aria-hidden="true">
+            <svg class="pegada-estatica" id="pegada-estatica" viewBox="0 0 24 24"><use href="#pata"/></svg>
+            <canvas id="poeira-fossil" hidden></canvas>
+            <span class="escavacao-legenda">VESTÍGIO Nº 01</span>
+          </div>
+        </section>
+        <div class="fosseis" aria-hidden="true">
+          <svg><use href="#osso"/></svg>
+          <svg><use href="#osso"/></svg>
+          <svg><use href="#osso"/></svg>
+        </div>
+        <nav class="trilha" aria-label="Trilha da expedição">
+          <a href="#inicio"><span><svg class="icone" aria-hidden="true"><use href="#pata"/></svg></span>Convite</a>
+          <a href="#contagem"><span><svg class="icone" aria-hidden="true"><use href="#pata"/></svg></span>Contagem</a>
+          <a href="#confirmacao"><span><svg class="icone" aria-hidden="true"><use href="#pata"/></svg></span>Confirmar</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="contagem" id="contagem" aria-labelledby="titulo-contagem">
+      <div class="wrap revelar">
+        <div class="secao-titulo">
+          <span class="rotulo">02 · Rumo à era dos dinos</span>
+          <h2 id="titulo-contagem">Quanto falta?</h2>
+        </div>
+        <div class="relogio" role="timer" aria-live="off">
+          <div class="tempo"><b id="dias">–</b><small>Dias</small></div>
+          <div class="tempo"><b id="horas">–</b><small>Horas</small></div>
+          <div class="tempo"><b id="minutos">–</b><small>Minutos</small></div>
+          <div class="tempo"><b id="segundos">–</b><small>Segundos</small></div>
+        </div>
+        <p id="estado-relogio" role="status">A contagem começa quando a data e o horário estiverem definidos.</p>
+      </div>
+    </section>
+
+    <section class="nota textura" id="nota" aria-labelledby="titulo-nota" hidden>
+      <div class="wrap">
+        <h2 id="titulo-nota">Recado dos exploradores</h2>
+        <p data-festa="observacoes"></p>
+      </div>
+    </section>
+
+    <section class="resposta textura" id="confirmacao" aria-labelledby="titulo-confirmacao">
+      <div class="wrap convite revelar">
+        <div class="formulario">
+          <span class="rotulo">03 · Chamada da turma</span>
+          <h2 id="titulo-confirmacao">Você vem rugir com a gente?</h2>
+          <p>Confirme sua presença pelo WhatsApp. Se quiser, preencha os campos para completar a mensagem.</p>
+          <form id="rsvp">
+            <div class="campos">
+              <label>Seu nome <small>(opcional)</small><input id="convidado" type="text" autocomplete="name" maxlength="80" placeholder="Como você se chama?"></label>
+              <label>Quantas pessoas vão com você? <small>(opcional, inclua você)</small><input id="pessoas" type="number" min="1" max="999" step="1" inputmode="numeric" placeholder="Ex.: 3"></label>
+            </div>
+            <button class="botao confirmar" type="submit">
+              <svg class="icone" aria-hidden="true"><use href="#chat"/></svg> Confirmar pelo WhatsApp
+            </button>
+            <p id="retorno" role="status"></p>
+          </form>
+        </div>
+        <div class="ninho">
+          <button class="ovo" type="button" aria-expanded="false" aria-controls="filhote">
+            <svg viewBox="0 0 120 106" aria-hidden="true">
+              <ellipse cx="60" cy="92" rx="48" ry="10" fill="#bfaa79"/>
+              <path d="M20 91q8-15 36-8 27-9 46 8-14 11-42 10-28 0-40-10Z" fill="#90764d"/>
+              <g id="filhote" class="filhote" stroke="#344a32" stroke-width="2.5">
+                <path d="M41 67q-13-13-5-29 7-13 24-13 17 0 23 15 16-1 19 10 3 14-20 16-9 16-23 16Z" fill="#98af55"/>
+                <circle cx="65" cy="46" r="8" fill="#fff3cf"/>
+                <circle cx="67" cy="47" r="3" fill="#344a32" stroke="none"/>
+                <path d="M79 57q6 4 14 0" fill="none" stroke-linecap="round"/>
+              </g>
+              <path class="casca-cima" d="M31 58C32 39 44 13 60 13s28 26 29 45l-10 6-10-7-9 9-9-7-11 6Z" fill="#fff3ce" stroke="#795e46" stroke-width="2.5" stroke-linejoin="round"/>
+              <path class="casca-cima" d="M46 42q-4-8 2-11 8-3 8 4 1 8-10 7Zm23-5q8-5 11 4 2 6-5 6-8-1-6-10Z" fill="#bd9e72"/>
+              <path d="m31 58 9 7 11-6 9 7 9-9 10 7 10-6c2 19-6 35-29 35S29 77 31 58Z" fill="#f0d3a0" stroke="#795e46" stroke-width="2.5" stroke-linejoin="round"/>
+              <path d="M47 73q7-4 9 2 2 7-5 7-7-2-4-9Zm23 6q5-7 10-4 5 5-1 8-8 4-9-4Z" fill="#bd9e72"/>
+            </svg>
+            <span id="ovo-texto">Toque no ovo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <svg class="icone" aria-hidden="true"><use href="#pata"/></svg>
+      <strong data-festa="pais">[NOMES]</strong>
+      <p>Até a próxima pegada! 🦖</p>
+    </div>
+  </footer>
+  <div class="festa-confete" aria-hidden="true"></div>
+
+</body>
+</html>
