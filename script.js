@@ -13,8 +13,8 @@ const festa = {
 };
 
 // Edite aqui a mensagem. Os trechos opcionais já incluem a pontuação.
-const mensagemWhatsApp = (nome, pessoas) =>
-  `Oi! ${nome ? `Aqui é ${nome}. ` : ''}Confirmo minha presença no aniversário de dinossauro${preenchido(festa.nome) ? ` de ${festa.nome}` : ''} no dia ${festa.data}! ${pessoas ? `Seremos ${pessoas} pessoa(s). ` : ''}Mal podemos esperar!`;
+const mensagemWhatsApp = (nome, pessoas, criancas, idades) =>
+  `Oi! ${nome ? `Aqui é ${nome}. ` : ''}Confirmo minha presença no aniversário de dinossauro${preenchido(festa.nome) ? ` de ${festa.nome}` : ''} no dia ${festa.data}! ${pessoas ? `Seremos ${pessoas} pessoa(s). ` : ''}${criancas ? `Crianças: ${criancas}. ` : ''}${idades ? `Idades das crianças: ${idades}. ` : ''}Mal podemos esperar!`;
 
 const porId = id => document.getElementById(id);
 const movimentoReduzido = matchMedia('(prefers-reduced-motion: reduce)');
@@ -176,7 +176,14 @@ porId('rsvp').addEventListener('submit', evento => {
     retorno.textContent = 'A data da festa ainda precisa ser configurada.';
     return;
   }
-  const texto = mensagemWhatsApp(porId('convidado').value.trim(), porId('pessoas').valueAsNumber || '');
+  const pessoas = porId('pessoas').valueAsNumber;
+  const criancas = porId('criancas')?.value || '';
+  const idades = porId('idades-criancas')?.value.trim() || '';
+  if (pessoas && Number(criancas) > pessoas) {
+    retorno.textContent = 'A quantidade de crianças deve estar incluída no total de pessoas.';
+    return;
+  }
+  const texto = mensagemWhatsApp(porId('convidado').value.trim(), pessoas, criancas, idades);
   const destino = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
   confirmar.disabled = true;
   retorno.textContent = 'Preparando sua mensagem no WhatsApp…';
